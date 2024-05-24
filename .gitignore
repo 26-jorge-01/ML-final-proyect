@@ -1,1 +1,7 @@
 data/gold/model_weights
+code/app/model
+code/app/pca
+code/app/scaler
+code/app/tokenizer
+code/app/trees
+code/app/*.csv

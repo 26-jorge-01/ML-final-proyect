@@ -7,27 +7,27 @@ import numpy as np
 import os
 
 # Paths de los pesos de los modelos usados
-tokenizer_dir = 'tokenizer'
-model_dir = 'model'
+tokenizer_dir = 'code/app/tokenizer'
+model_dir = 'code/app/model'
 
 tokenizer_dir = os.path.join(tokenizer_dir)
 model_dir = os.path.join(model_dir)
 # Scalers
-scaler_name_dir = 'scaler/scaler_names.joblib'
-scaler_nit_dir = 'scaler/scaler_nits.joblib'
+scaler_name_dir = 'code/app/scaler/scaler_names.joblib'
+scaler_nit_dir = 'code/app/scaler/scaler_nits.joblib'
 # PCA
-pca_name_dir = 'pca/names_pca.joblib'
-pca_nit_dir = 'pca/nits_pca.joblib'
-pca_entities_dir = 'pca/entidades_pca.joblib'
+pca_name_dir = 'code/app/pca/names_pca.joblib'
+pca_nit_dir = 'code/app/pca/nits_pca.joblib'
+pca_entities_dir = 'code/app/pca/entidades_pca.joblib'
 # Trees
-names_trees_dir = 'trees/names'
-nits_trees_dir = 'trees/nits'
-entities_trees_dir = 'trees/entities'
+names_trees_dir = 'code/app/trees/names'
+nits_trees_dir = 'code/app/trees/nits'
+entities_trees_dir = 'code/app/trees/entities'
 
 # Datasets que se mostrarán en pantalla como sugerencias
-entidades_por_nombre = pd.read_csv('entidades_agrupadas_por_nombres.csv')
-entidades_por_nit = pd.read_csv('entidades_agrupadas_por_nits.csv')
-entidades_por_nombre_y_nit = pd.read_csv('entidades_agrupadas_por_nombres_y_nits.csv')
+entidades_por_nombre = pd.read_csv('code/app/entidades_agrupadas_por_nombres.csv')
+entidades_por_nit = pd.read_csv('code/app/entidades_agrupadas_por_nits.csv')
+entidades_por_nombre_y_nit = pd.read_csv('code/app/entidades_agrupadas_por_nombres_y_nits.csv')
 
 def load_all_models(model_dir):
     models = []
